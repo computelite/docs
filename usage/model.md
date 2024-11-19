@@ -2,118 +2,114 @@
 
 # Model
 
-A Model in ComputeLite is a SQLite file stored in the browser’s OPFS (Origin Private File System) storage. Each model has its own copy of data, code, input files and python packages. By default, ComputeLite offers a fixed set of methods to access/manage models.
+A Model in ComputeLite is a SQLite file stored in the browser’s OPFS (Origin Private File System) storage. Each model has its own copy of data, code, input files, and Python packages. By default, ComputeLite offers a fixed set of methods to access and manage models.
 
 ## Add new model
 
-Navigation: **Model** > **Add New Model**
+**Navigation**: **Model** > **Add New Model**
 
 ![Add new model](../images/add_new_model.png)
 
-User can add a new model using this function. Here, user must input a unique model name and select a template based on which ComputeLite will create SQLite schema
+Users can add a new model using this function. They must input a unique model name and select a template based on which ComputeLite will create the SQLite schema.
 
-## Save as model
+## Save As Model
 
-Navigation: **Model** > **Save As**
+**Navigation**: **Model** > **Save As**
 
 ![Save as model](../images/save_as_model.png)
 
-User can create a copy of an existing (selected) model using this function. Here, user must input a unique model name.
+Users can create a copy of an existing model using this function. They must input a unique model name.
 
-## Hide model
+## Hide Model
 
-Navigation: **Model** > **Hide Model**
+**Navigation**: **Model** > **Hide Model**
 
 ![Hide model](../images/hide_model.png)
 
-User can hide existing models using this function. Here, user may choose one or more models to be hidden as shown in image above.
+Users can hide existing models using this function. Multiple models can be selected to be hidden, as shown in the image above.
 
-## Add existing model
+## Add Existing Model
 
-Navigation: **Model** > **Add Existing Model**
+**Navigation**: **Model** > **Add Existing Model**
 
 ![Add existing model](../images/add_existing_model.png)
 
-User can add hidden models back to Home Page using this function. Here, user may choose one or more models to be added in Home Page as shown in image above.
+Users can restore hidden models back to the Home Page using this function. Multiple models can be selected for restoration, as shown in the image above.
 
-## Backup model
+## Backup Model
 
-Navigation: **Model** > **Backup Model**
+**Navigation**: **Model** > **Backup Model**
 
-User can download a local copy of selected model (SQLite file) using this function. User may use this file to share/restore in the future.
+Users can download a local copy of a selected model (SQLite file) using this function. This file can be used for sharing or restoring in the future.
 
-## Restore model
+## Restore Model
 
-Navigation: **Model** > **Backup Model**
+**Navigation**: **Model** > **Backup Model**
 
-User can restore a model if a local copy of selected model is available with user. 
+Users can restore a model from a previously backed-up local copy. 
 
 ![Restore model](../images/add_existing_model.png)
 
-User can choose the backup copy available on its machine and system will replace backup copy with current copy of selected model.
+Users must select the backup file on their machine, and the system will replace the current model with the backup copy.
 
-## Delete model
+## Delete Model
 
-Navigation: **Model** > **Delete Model**
+**Navigation**: **Model** > **Delete Model**
 
 ![Delete model](../images/delete_models.png)
 
-User can choose one or models to be deleted permanently from Compute Lite.
+Users can permanently delete one or more models from ComputeLite.
 
 ## Upload Excel
 
-Navigation: **Model** > **Upload Excel**
+**Navigation**: **Model** > **Upload Excel**
 
-User can choose to upload excel data in SQLite model to existing or new tables. Note that it will look for table headers in the first row.
+Users can upload Excel data into a SQLite model, either into existing or new tables. Note that the system expects table headers in the first row.
 
 ![Select Excel Worksheet](../images/select_excel_sheets.png)
 
-For exiting tables, it will provide 3 options to choose from:
+For existing tables, three options are available:
 
-1. **Purge and Upload**: This is default option for existing tables. It will delete all the existing data from respective tables and then import data from excel.
+1. **Purge and Upload** (default): Deletes all existing data in the table and then imports data from the Excel file.
+2. **Create and Upload**: Drops the existing table, recreates it, and then imports data.
+3. **Ignore**: Does not delete or upload any data.
 
-2. **Create and upload**: This will drop existing table, recreate it and then import data from excel
-
-3. **Ignore**: This will **NOT** delete/upload any data
-
-For new tables, it will provide options 2 & 3. New Tables created could be navigated from **All Others** table group.
+For new tables, only options 2 and 3 are available. Newly created tables can be accessed under the **All Others** table group.
 
 ## Download Excel
 
-Navigation: **Model** > **Download Excel**
+**Navigation**: **Model** > **Download Excel**
 
 ![Select Excel Worksheet](../images/select_excel_sheets.png)
 
-User can download excel by selecting one or more **Table Groups**, it will download all existing tables under selected tablegroup. If user wants to download a selected table, user can download it from **TableDisplay** page
+Users can download Excel files by selecting one or more **Table Groups**. This will download all tables within the selected group. Individual tables can be downloaded from the **TableDisplay** page.
 
-## Vacuum model
+## Vacuum Model
 
-Navigation: **Model** > **Vacuum Model**
+**Navigation**: **Model** > **Vacuum Model**
 
-Vacuum is a SQLite functionality where it will defragment model to get better performance
+Vacuuming is a SQLite functionality that defragments the model to improve performance.
 
-## Create view
+## Create View
 
-Navigation: **Model** > **Create View**
+**Navigation**: **Model** > **Create View**
 
 ![Create View](../images/create_view.png)
 
-User can create a SQL view in the selected model. User Should input view name and a valid SQL query. This view can be accessed from Table Groups under **Views** group
+Users can create a SQL view in the selected model. They need to input a view name and a valid SQL query. Created views can be accessed under the **Views** table group.
 
 ## SQL Editor
 
-Navigation: **Model** > **SQL Editor**
+**Navigation**: **Model** > **SQL Editor**
 
 ![SQL Editor](../images/sql_editor.png)
 
-This will open a SQL editor page with selected model. User may write any DDL/DML queries here.
+This opens the SQL editor page for the selected model. Users can write DDL/DML queries here.
 
 ## Upload Package
 
-Navigation: **Model** > **Upload Package**
+**Navigation**: **Model** > **Upload Package**
 
 ![Upload Package](../images/upload_package.png)
 
-If a python package in not available in Pyodide and it's not a pure python package, user may build their own package by following pyodide instructions at https://pyodide.org/en/stable/development/building-and-testing-packages.html User can then upload their own built wheel using this option.
-
-
+If a Python package is not available in Pyodide or is not a pure Python package, users can build their own package by following the instructions at [Pyodide's official site](https://pyodide.org/en/stable/development/building-and-testing-packages.html). They can then upload the built wheel file using this option.
