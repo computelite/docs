@@ -24,6 +24,7 @@ Using ComputeLite
 
    usage/quickstart.md
    usage/model.md
+   usage/files.md
 
 Indices and Tables
 ==================
