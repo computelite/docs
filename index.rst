@@ -1,7 +1,7 @@
 Welcome to ComputeLite!
 ============================================
 
-ComputeLite is a truly serverless tool designed for powerful, in-browser computation.
+ComputeLite is a true serverless tool designed for powerful, in-browser computation.
 
 What is ComputeLite?
 --------------------
@@ -23,6 +23,7 @@ Using ComputeLite
    :maxdepth: 1
 
    usage/quickstart.md
+   usage/model.md
 
 Indices and Tables
 ==================
