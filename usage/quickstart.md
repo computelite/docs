@@ -56,7 +56,7 @@ Users may upload data in any format using this option.
 
 Users can access data imported in the previous steps through Python code and write further code to process or transform data.
 
-1. Click on the code editor icon ![Editor Icon](../images/code_icon.png) in the menu bar of the Home Page.
+1. Click on the code editor icon ![Editor Icon](../images/icons/code_icon.png) in the menu bar of the Home Page.
 2. Access input files:
 
     ```python
