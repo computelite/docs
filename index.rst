@@ -27,7 +27,7 @@ Using ComputeLite
    usage/files.md
    usage/pythoneditor.md
    usage/table.md
-   usage/setuptables.md
+   usage/specialtables.md
 
 Indices and Tables
 ==================
