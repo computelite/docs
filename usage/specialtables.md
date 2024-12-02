@@ -118,5 +118,3 @@ The **Data Files** table (S_DataFiles) lists all files uploaded via **Upload Fil
 **Navigation**: `HomePage > All Other > Package Wheels`  
 
 The **Package Wheels** table (S_PackageWheels) displays all Python wheel files uploaded via `HomePage > Upload Package`.  
-
----  

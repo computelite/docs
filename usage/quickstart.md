@@ -6,7 +6,7 @@ A Model in ComputeLite is a SQLite file stored in the browser’s OPFS (Origin P
 
 ## Adding a New Model
 
-1. Open [ComputeLite](https://computelite.com) in your browser.
+1. Open [ComputeLite](https://computelite.com/homePage.html) in your browser.
 
 2. Navigate to **Model** > **Add New Model**.
 
